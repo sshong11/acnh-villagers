@@ -9,10 +9,18 @@ router.get("/", async (req, res) => {
     res.render("villagers/index.ejs", {villagers})
 })
 
-// test
-router.get("/test", async (req, res) => {
-    const villagers = await Villager.find({})
-    console.log(villagers[0].name['name-USen'])
+// SHOW
+router.get("/:id", (req, res) => {
+    const id = req.params.id
+    Villager.findById(id, (err, villager) => {
+        res.render("villagers/show.ejs", {villager})
+    })
 })
+
+// // test
+// router.get("/test", async (req, res) => {
+//     const villagers = await Villager.find({})
+//     console.log(villagers[0].name['name-USen'])
+// })
 
 module.exports = router
