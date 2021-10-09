@@ -3,7 +3,7 @@ const express = require("express")
 const methodOverride = require("method-override")
 const morgan = require("morgan")
 const session = require("express-session")
-const Villager = require("../models/villagers.js")
+const VillagerRouter = require("../controllers/villagers")
 
 const middleware = (app) => {
     app.use(morgan("tiny")) // logging
@@ -16,6 +16,7 @@ const middleware = (app) => {
     //     saveUninitialized: true,
     //     resave: false,
     // }))
+    app.use("/villagers", VillagerRouter)
 }
 
 module.exports = middleware

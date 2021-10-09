@@ -4,5 +4,8 @@ const Villager = require("../models/villagers")
 const router = express.Router()
 
 router.get("/", async (req, res) => {
-    res.render("villagers/index.ejs", {Villager})
+    const villagers = await Villager.find({})
+    res.render("villagers/index.ejs", {villagers})
 })
+
+module.exports = router
