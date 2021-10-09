@@ -11,8 +11,7 @@
 
         <!-- display all villager icons -->
         <% for (let i = 0; i < villagers.length; i++) { %>
-            
-            <a href="/villagers/<%= i %>">
+            <a href="/villagers/<%= villagers[i].name['name-USen'] %>">
                 <img src="<%= villagers[i].icon_uri %>">
             </a>
 
