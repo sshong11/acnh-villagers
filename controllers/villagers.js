@@ -9,6 +9,11 @@ router.get("/", async (req, res) => {
     res.render("villagers/index.ejs", {villagers})
 })
 
+// NEW
+router.get("/new", (req, res) => {
+    res.render("villagers/new.ejs")
+})
+
 // SHOW
 router.get("/:id", (req, res) => {
     const id = req.params.id
