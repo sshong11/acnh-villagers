@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editing...</title>
+</head>
+<body>
+    <div>
+        <form action="/villagers/<%= villager._id %>?_method=PUT" method="post">
+            <fieldset>
+                <legend>Edit Villager</legend>
+                <label>
+                    Name: <input
+                    type="text"
+                    name="name"
+                    value="<%= villager.name['name-USen'] %>"
+                    placeholder="Enter a name"
+                    >
+                </label>
+                <label>
+                    Personality: <input
+                    type="text"
+                    name="personality"
+                    value="<%= villager.personality %>"
+                    placeholder="Enter a trait"
+                    >
+                </label>
+                <label>
+                    Birthday: <input
+                    type="text"
+                    name="birthday-string"
+                    value="<%= villager['birthday-string'] %>"
+                    placeholder="Month Day ex: January 1st"
+                    >
+                </label>
+                <label>
+                    Gender: <input
+                    type="text"
+                    name="gender"
+                    value="<%= villager.gender %>"
+                    placeholder="Any gender"
+                    >
+                </label>
+                <label>
+                    Species: <input
+                    type="text"
+                    name="species"
+                    value="<%= villager.species %>"
+                    placeholder="Enter species type ex: Bear"
+                    >
+                </label>
+                <label>
+                    Hobby: <input
+                    type="text"
+                    name="hobby"
+                    value="<%= villager.hobby %>"
+                    placeholder="Enter a hobby"
+                    >
+                </label>
+                <label>
+                    Catch Phrase: <input
+                    type="text"
+                    name="catch-phrase"
+                    value="<%= villager['catch-phrase'] %>"
+                    placeholder="A trademark!"
+                    >
+                </label>
+                <label>
+                    Saying: <input
+                    type="text"
+                    name="saying"
+                    value="<%= villager.saying %>"
+                    placeholder="Like a motto"
+                    >
+                </label>
+                <label>
+                    Icon (Image): <input type="text" name="icon_uri" value="<%= villager.icon_uri %>" placeholder="A square image"><br>
+                </label>
+                <label>
+                    Full Picture (Image): <input type="text" name="image_uri" value="<%= villager.image_uri %>" placeholder="Something like a portrait"><br>
+                </label>
+            </fieldset>
+            <input type="submit" value="Update Villager">
+        </form>
+    </div>
+</body>
+</html>
