@@ -21,6 +21,13 @@ router.post("/", (req, res) => {
     })
 })
 
+// EDIT
+router.get("/:id/edit", (req, res) => {
+    Villager.findById(req.params.id, (err, villager) => {
+        res.render("villagers/edit.ejs", {villager})
+    })
+})
+
 // SHOW
 router.get("/:id", (req, res) => {
     const id = req.params.id
