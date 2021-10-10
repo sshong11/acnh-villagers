@@ -28,6 +28,13 @@ router.get("/:id/edit", (req, res) => {
     })
 })
 
+// UPDATE
+router.put("/:id", (req, res) => {
+    Villager.findByIdAndUpdate(req.params.id, req.body, {new: true}, (err, villager) => {
+        res.redirect("/villagers")
+    })
+})
+
 // SHOW
 router.get("/:id", (req, res) => {
     const id = req.params.id
