@@ -9,13 +9,13 @@ const {Schema, model} = mongoose
 const villagersSchema = new Schema({
     name: Object,
     personality: String,
-    birthday_string: String,
+    'birthday-string': String,
     species: String,
     gender: String,
     hobby: String,
     icon_uri: String,
     image_uri: String,
-    catch_phrase: String,
+    'catch-phrase': String,
     saying: String,
 })
 
