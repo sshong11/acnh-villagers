@@ -35,6 +35,14 @@ router.put("/:id", (req, res) => {
     })
 })
 
+// DELETE
+router.delete("/:id", (req, res) => {
+    Villager.findByIdAndRemove(req.params.id, (err, villager) => {
+        res.redirect("/villagers")
+    })
+})
+
+
 // SHOW
 router.get("/:id", (req, res) => {
     const id = req.params.id
