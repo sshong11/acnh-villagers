@@ -14,6 +14,13 @@ router.get("/new", (req, res) => {
     res.render("villagers/new.ejs")
 })
 
+// CREATE
+router.post("/", (req, res) => {
+    Villager.create(req.body, (err, villager) => {
+        res.redirect("/villagers")
+    })
+})
+
 // SHOW
 router.get("/:id", (req, res) => {
     const id = req.params.id

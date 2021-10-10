@@ -7,7 +7,7 @@ const {Schema, model} = mongoose
 
 // make villagers schema
 const villagersSchema = new Schema({
-    name: Object,
+    name: {},
     personality: String,
     'birthday-string': String,
     species: String,
