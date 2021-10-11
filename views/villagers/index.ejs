@@ -9,14 +9,14 @@
         <a href='/villagers'>Favorites</a>
         <a href='/villagers'>Login</a>
     </nav>
-    <div>
+    <div id="iconall">
         <!-- display all villager icons -->
         <% for (let i = 0; i < villagers.length; i++) { %>
             <!-- <a href="/villagers/<%= villagers[i].name['name-USen'] %>"> -->
-            <a href="/villagers/<%= villagers[i]._id %>">
-                <img src="<%= villagers[i].icon_uri %>">
-            </a>
-
+            <% if (i % 11 === 0) { %>
+                <br>
+            <% } %>
+            <a href="/villagers/<%= villagers[i]._id %>"><img src="<%= villagers[i].icon_uri %>" id="iconimg"></a>
         <% } %>
     </div>
 </body>

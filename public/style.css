@@ -16,6 +16,7 @@ nav {
   color: white;
   display: flex;
   justify-content: right;
+  margin-bottom: 10px;
 }
 
 nav a {
@@ -40,4 +41,21 @@ nav div {
 
 nav a:hover {
   background-color: #fff563;
+}
+
+#iconimg {
+  background-color: #d8ccb6;
+  border-style: solid;
+  border-color: #9e8364;
+  border-radius: 25px;
+  margin: 10px;
+}
+
+#iconimg:hover {
+  background-color: #9dffb0;
+  border-color: #81f1f7;
+}
+
+#iconall {
+  text-align: center;
 }
