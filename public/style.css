@@ -1,8 +1,14 @@
+@font-face {
+  font-family: FOT-Rodin;
+  src: url("./FOT-Rodin\ Pro\ UB.otf") format("opentype");
+}
+
 body {
     background-image: url("https://i.redd.it/4124xor7bmo41.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100vw;
+    font-family: FOT-Rodin;
   }
 
 nav {
@@ -17,6 +23,10 @@ nav a {
   font-size: 40px;
   text-decoration: none;
   color: inhert;
+}
+
+a:visited {
+  text-decoration: none;
 }
 
 nav div {
