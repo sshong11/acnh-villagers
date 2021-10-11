@@ -49,6 +49,8 @@ nav a:hover {
   border-color: #9e8364;
   border-radius: 25px;
   margin: 10px;
+  width: 128px;
+  height: auto;
 }
 
 #iconimg:hover {
