@@ -27,6 +27,7 @@ nav a {
 
 a:visited {
   text-decoration: none;
+  color: inherit;
 }
 
 nav div {
