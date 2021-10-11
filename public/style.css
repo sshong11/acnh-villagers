@@ -4,3 +4,29 @@ body {
     background-attachment: fixed;
     background-size: 100vw;
   }
+
+nav {
+  background-color: #c48d3f;
+  color: white;
+  display: flex;
+  justify-content: right;
+}
+
+nav a {
+  padding: 10px 50px;
+  font-size: 40px;
+  text-decoration: none;
+  color: inhert;
+}
+
+nav div {
+  display: flex;
+  position: absolute;
+  padding: 10px 50px;
+  left: 0px;
+  font-size: 40px;
+}
+
+nav a:hover {
+  background-color: #fff563;
+}
