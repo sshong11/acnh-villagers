@@ -4,7 +4,7 @@
 <body>
     <%- include("../partials/nav.ejs") %>
     <h2>
-        <img src="<%= villager.image_uri %>"><br>
+        <img src="<%= villager.image_uri %>" id="showimg"><br>
         <%= villager.name['name-USen'] %><br>
         <%= villager.personality %><br>
         <%= villager["birthday-string"] %><br>
@@ -15,10 +15,10 @@
         <%= villager.saying %><br>
             
     </h2>
-    <a href="/villagers/<%= villager._id %>/edit"><button>Edit</button></a>
+    <a href="/villagers/<%= villager._id %>/edit"><button class="button">Edit</button></a>
     <form action="/villagers/<%= villager._id %>?_method=DELETE" method="post">
-        <input type="submit" value="Delete">
+        <input type="submit" value="Delete" class="button">
     </form>
-    <a href="/villagers"><button>Back to Home</button></a>
+    <a href="/villagers"><button class="button">Back to Home</button></a>
 </body>
 </html>

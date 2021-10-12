@@ -62,8 +62,39 @@ nav a:hover {
   text-align: center;
 }
 
+.button {
+  background-color: #fffae4;
+  color: #7a6e55;
+  font-family: FOT-Rodin;
+  margin: 10px;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: solid;
+  border-radius: 10px;
+  transition-duration: 0.3s;
+}
+
+.button:hover {
+  background-color: #7a6e55;
+  color: #fffae4;
+}
+
 .sticky {
   position: fixed;
   margin: -8px;
   width: 100%
+}
+
+/* show page */
+
+#showimg {
+  display: flex;
+  justify-content: left;
+}
+
+h2 {
+  display: flex;
+  justify-content: right;
 }
