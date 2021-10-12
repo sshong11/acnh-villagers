@@ -45,6 +45,7 @@ router.delete("/:id", (req, res) => {
 
 // SHOW
 router.get("/:id", (req, res) => {
+    console.log(req.params.id)
     const id = req.params.id
     Villager.findById(id, (err, villager) => {
         res.render("villagers/show.ejs", {villager})

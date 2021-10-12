@@ -5,20 +5,18 @@
     <%- include("../partials/nav.ejs") %>
     <h2>
         <div id="imgflex">
-        <img src="<%= villager.image_uri %>" id="showimg"><br>
+        <img src="<%= villager.image_uri %>" id="showimg">
         </div>
-
         <div id="textflex">
-        <%= villager.name['name-USen'] %><br>
-        <%= villager.personality %><br>
-        <%= villager["birthday-string"] %><br>
-        <%= villager.gender %><br>
-        <%= villager.species %><br>
-        <%= villager.hobby %><br>
-        <%= villager["catch-phrase"]%><br>
-        <%= villager.saying %><br>
+        Name: <%= villager.name['name-USen'] %><br>
+        Personality: <%= villager.personality %> <br>
+        Birthday: <%= villager["birthday-string"] %><br>
+        Gender: <%= villager.gender %><br>
+        Species: <%= villager.species %><br>
+        Hobby: <%= villager.hobby %><br>
+        Catchphrase: "<%= villager["catch-phrase"]%>"<br>
+        Saying: "<%= villager.saying %>"<br>
         </div>
-            
     </h2>
     <div id="allbuttons">
     <a href="/villagers/<%= villager._id %>/edit"><button class="button">Edit</button></a>
