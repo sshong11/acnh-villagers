@@ -102,6 +102,7 @@ nav a:hover {
 }
 
 #textflex {
+  font-family: Seurat-Pro;
   background-color: #fffae4;
   color: #7a6e55;
   display: flex;
@@ -109,7 +110,7 @@ nav a:hover {
   padding: 0px 30px 0px 30px;
   border: solid;
   border-radius: 20px;
-  border-width: 10px;
+  border-width: 3px;
   border-color: #7a6e55;
   margin-top: 5vw;
 }
@@ -128,7 +129,7 @@ nav a:hover {
 
 h2 {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 #editflex {
@@ -166,6 +167,7 @@ h2 {
 #newvill {
   display: flex;
   justify-content: center;
+  margin-top: 3vw;
 }
 
 fieldset {
@@ -178,4 +180,32 @@ fieldset {
   border-color: #61b858;
   border-radius: 5px;
   color: #625336;
+}
+
+input[type=text] {
+  font-family: Seurat-Pro;
+  width: 20vw;
+  background-color: #dcedc9;
+  border: none;
+  color: #5a5536;
+}
+
+::placeholder {
+  opacity: 50%;
+}
+
+#newsubmit {
+  background-color: #00b6a7;
+  color: #f1ffff;
+  border: none;
+  padding: 1vw;
+  border-radius: 10px;
+  font-family: Seurat-Pro;
+  margin-top: 1vw;
+  cursor: pointer;
+  transition: transform .2s;
+}
+
+#newsubmit:hover {
+  transform: scale(1.1);
 }
