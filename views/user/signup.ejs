@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("../partials/head.ejs") %>
+<body>
+    <%- include("../partials/nav.ejs") %>
+    <main id="userpage">
+        <div>
+          <form action="/user/signup" method="POST">
+              <fieldset id="signup">
+                  <legend>New User</legend>
+                  <label>
+                      USERNAME: <input type="text" name="username" required id="userfield"/>
+                  </label>
+                  <label>
+                      PASSWORD: <input type="password" name="password" required id="userfield"/>
+                  </label>
+                  <input type="submit" value="Create Account" />
+              </fieldset>
+          </form>
+        </div>
+
+        <div>
+            <form action="/user/login" method="POST">
+                <fieldset id="signup">
+                    <legend>User Login</legend>
+                    <label>
+                        USERNAME: <input type="text" name="username" required id="userfield"/>
+                    </label>
+                    <label>
+                        PASSWORD: <input type="password" name="password" required id="userfield"/>
+                    </label>
+                    <input type="submit" value="Login" />
+                </fieldset>
+            </form>
+          </div>
+      </main>
+</body>
+</html>

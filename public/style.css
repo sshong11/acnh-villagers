@@ -209,3 +209,29 @@ input[type=text] {
 #newsubmit:hover {
   transform: scale(1.1);
 }
+
+/* SIGNUP PAGE */
+
+#signup {
+  font-family: Seurat-Pro;
+  background-color: #e3c691;
+  border-color: #a9916c;
+  border-radius: 5px;
+  color: #7f5f3b;
+  padding: 6vw 3vw 6vw 3v;
+
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+#userfield {
+  background-color: #ecbb4e;
+  border: none;
+}
+
+#userpage {
+  display: flex;
+  justify-content: center;
+  margin-top: 8vw;
+}

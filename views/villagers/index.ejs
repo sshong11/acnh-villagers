@@ -2,13 +2,7 @@
 <html lang="en">
     <%- include("../partials/head.ejs") %>
 <body>
-    <nav>
-        <div id="logo">ACNH Villagers</div>
-        <a href='/villagers'>Home</a>
-        <a href="/villagers/new">New</a>
-        <a href='/villagers'>Favorites</a>
-        <a href='/villagers'>Login</a>
-    </nav>
+    <%- include("../partials/nav.ejs") %>
     <div id="iconall">
         <!-- display all villager icons -->
         <% for (let i = 0; i < villagers.length; i++) { %>
