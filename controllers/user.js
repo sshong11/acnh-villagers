@@ -18,4 +18,31 @@ router.post("/signup", async (req, res) => {
     })
 })
 
+
+// LOGIN
+router.get("/login", (req, res) => {
+    res.render("user/signup.ejs")
+})
+
+router.post("/login", (req, res) => {
+    const {username, password} = req.body
+    User.findOne({username}, (err, user) => {
+        // checking if user exists
+        if (!user) {
+            res.send("User doesn't exist")
+        } else {
+            // check if password matches
+            const result = bcrypt.compareSync(password, user.password)
+            if (result) {
+                req.session.loggedIn = true
+                req.session.username = username
+                res.redirect("/villagers")
+            } else {
+                res.send("wrong password")
+            }
+        }
+    })
+})
+
+
 module.exports = router
