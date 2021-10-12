@@ -1,0 +1,19 @@
+const express = require("express")
+const User = require("../models/user")
+const bcrypt = require("bcryptjs")
+const {application} = require("express")
+
+const router = express.Router()
+
+// SIGNUP
+router.get("/signup", (req, res) => {
+    res.render("user/signup.ejs")
+})
+
+router.post("/signup", (req, res) => {
+    req.body.password = await bcrypt.hash(req.body.password, await bcrypt.genSalt(10))
+
+    User.create(req.body, (err, user) => {
+        res.redirect("/user/login")
+    })
+})
