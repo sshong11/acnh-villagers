@@ -3,7 +3,7 @@
     <%- include("../partials/head.ejs") %>
 <body>
     <%- include("../partials/nav.ejs") %>
-    <div>
+    <div id="editflex">
         <form action="/villagers/<%= villager._id %>?_method=PUT" method="post">
             <fieldset>
                 <legend>Edit Villager</legend>

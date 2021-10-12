@@ -74,6 +74,9 @@ nav a:hover {
   border: solid;
   border-radius: 10px;
   transition-duration: 0.3s;
+  font-size: 16px;
+  table-layout: fixed;
+  width: 10vw;
 }
 
 .button:hover {
@@ -89,12 +92,27 @@ nav a:hover {
 
 /* show page */
 
-#showimg {
+#imgflex {
   display: flex;
-  justify-content: left;
+  align-items: center;
 }
 
 h2 {
   display: flex;
-  justify-content: right;
+  justify-content: space-around;
+}
+
+#editflex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#allbuttons {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  position: absolute;
+  bottom: 0px;
+  left: 50vw;
+  right: 50vw;
 }

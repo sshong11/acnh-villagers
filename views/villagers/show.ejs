@@ -4,7 +4,11 @@
 <body>
     <%- include("../partials/nav.ejs") %>
     <h2>
+        <div id="imgflex">
         <img src="<%= villager.image_uri %>" id="showimg"><br>
+        </div>
+
+        <div id="textflex">
         <%= villager.name['name-USen'] %><br>
         <%= villager.personality %><br>
         <%= villager["birthday-string"] %><br>
@@ -13,12 +17,15 @@
         <%= villager.hobby %><br>
         <%= villager["catch-phrase"]%><br>
         <%= villager.saying %><br>
+        </div>
             
     </h2>
+    <div id="allbuttons">
     <a href="/villagers/<%= villager._id %>/edit"><button class="button">Edit</button></a>
     <form action="/villagers/<%= villager._id %>?_method=DELETE" method="post">
         <input type="submit" value="Delete" class="button">
     </form>
     <a href="/villagers"><button class="button">Back to Home</button></a>
+    </div>
 </body>
 </html>
