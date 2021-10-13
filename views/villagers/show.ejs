@@ -8,7 +8,7 @@
         <img src="<%= villager.image_uri %>" id="showimg">
         </div>
         <div id="textflex">
-        Name: <%= villager.name['name-USen'] %><br>
+        Name: <%= villager.name['name-USen'] || villager.name %><br>
         Personality: <%= villager.personality %> <br>
         Birthday: <%= villager["birthday-string"] %><br>
         Gender: <%= villager.gender %><br>

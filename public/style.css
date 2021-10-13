@@ -28,12 +28,12 @@ nav a {
   padding: 10px 50px;
   font-size: 2.1vw;
   text-decoration: none;
-  color: inhert;
+  color: white;
 }
 
 a:visited {
   text-decoration: none;
-  color: inherit;
+  color: white;
 }
 
 nav div {
