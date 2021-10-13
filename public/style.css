@@ -134,7 +134,8 @@ h2 {
 
 #editflex {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 3vw;
 }
 
 #allbuttons {
@@ -148,21 +149,6 @@ h2 {
 }
 
 /* NEW PAGE */
-
-/* fieldset {
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  align-content: center;
-  align-items: flex-end;
-  flex-wrap: wrap;
-  background-color: #eff1d7;
-  text-align: center;
-  width: 50vw;
-  margin-left: 22.5vw;
-  padding-top: 3vw;
-  padding-bottom: 3vw;
-} */
 
 #newvill {
   display: flex;
