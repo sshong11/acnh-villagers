@@ -221,3 +221,15 @@ input[type=text], input[type=password] {
   justify-content: center;
   margin-top: 8vw;
 }
+
+#logout {
+  display: flex;
+  background-color: #5e5f56;
+  color: #f7f7f3;
+  border: none;
+  padding: 1vw;
+  border-radius: 10px;
+  font-family: Seurat-Pro;
+  cursor: pointer;
+  text-decoration: none!important;
+}
