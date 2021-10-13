@@ -233,3 +233,9 @@ input[type=text], input[type=password] {
   cursor: pointer;
   text-decoration: none!important;
 }
+
+/* FAVORITES */
+
+#inprogress {
+  margin-left: 25vw;
+}

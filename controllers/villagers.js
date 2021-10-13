@@ -42,6 +42,11 @@ router.delete("/:id", (req, res) => {
     })
 })
 
+// favorites page
+router.get("/favorites", (req, res) => {
+    res.render("villagers/favorites.ejs")
+})
+
 
 // SHOW
 router.get("/:id", (req, res) => {
