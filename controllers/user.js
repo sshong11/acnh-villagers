@@ -45,4 +45,11 @@ router.post("/login", (req, res) => {
 })
 
 
+// LOGOUT
+router.get("/logout", (req, res) => {
+    req.session.destroy((err) => {
+        res.redirect("/villagers")
+    })
+})
+
 module.exports = router
