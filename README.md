@@ -27,3 +27,4 @@ https://trello.com/b/Whf9pYJx/project-2
 * Implement favoriting function and page for logged in users
 * Able to type out comments for villagers to share their thoughts
 * Search function (by name for now, preferrably by any description)
+* Responsive design, mobile-friendly
